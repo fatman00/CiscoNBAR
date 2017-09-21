@@ -85,3 +85,21 @@ iso.3.6.1.4.1.9.9.244.1.8.1.1.2.80 = STRING: "bittorrent"
 iso.3.6.1.4.1.9.9.244.1.8.1.1.2.81 = STRING: "directconnect"
 iso.3.6.1.4.1.9.9.244.1.8.1.1.2.82 = STRING: "skype"
 iso.3.6.1.4.1.9.9.244.1.8.1.1.2.83 = STRING: "unknown"
+
+
+NBAR enabled on interface:
+root@mon01:/omd/sites/snafu/share/check_mk# snmpwalk -c LAB -v 2c 192.168.30.1 1.3.6.1.4.1.9.9.244.1.1.1.1.1
+iso.3.6.1.4.1.9.9.244.1.1.1.1.1.1 = INTEGER: 2
+iso.3.6.1.4.1.9.9.244.1.1.1.1.1.2 = INTEGER: 2
+iso.3.6.1.4.1.9.9.244.1.1.1.1.1.3 = INTEGER: 2
+iso.3.6.1.4.1.9.9.244.1.1.1.1.1.4 = INTEGER: false(2)
+iso.3.6.1.4.1.9.9.244.1.1.1.1.1.5 = INTEGER: true(1)
+iso.3.6.1.4.1.9.9.244.1.1.1.1.1.6 = INTEGER: 2
+iso.3.6.1.4.1.9.9.244.1.1.1.1.1.7 = INTEGER: 2
+iso.3.6.1.4.1.9.9.244.1.1.1.1.1.8 = INTEGER: 2
+iso.3.6.1.4.1.9.9.244.1.1.1.1.1.9 = INTEGER: 2
+iso.3.6.1.4.1.9.9.244.1.1.1.1.1.10 = INTEGER: 2
+root@mon01:/omd/sites/snafu/share/check_mk#
+
+
+Searching the all stats table(https://www.cisco.com/en/US/docs/ios/12_2t/12_2t15/feature/guide/ftpdmib.html#wp1044928):
